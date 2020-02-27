@@ -13,17 +13,7 @@
         This is the footer content for the Home Page
       </div>
     </Modal>
-    <Carousel>
-      <div slot="defaultCarousel">
-        <carousel-3d>
-          <slide v-for="(slide, i) in allSlides" :index="i" :key="i">
-            <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
-              <img :data-index="index" :class="{ current: isCurrent, onLeft: (leftIndex >= 0), onRight: (rightIndex >= 0) }" :src="slide.src">
-            </template>
-          </slide>
-        </carousel-3d>
-      </div>
-    </Carousel>
+    <Carousel></Carousel>
   </div>
 </template>
 
@@ -39,12 +29,7 @@ export default {
   },
   data() {
     return {
-      isModalVisible: false,
-      allSlides: [
-        { id: 1, src: 'https://placehold.it/350x300' },
-        { id: 2, src: 'https://placehold.it/350x300' },
-        { id: 3, src: 'https://placehold.it/350x300' },
-      ]
+      isModalVisible: false
     }
   },
   methods: {
