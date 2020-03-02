@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <button type="button" class="btn" @click="showModal"> Open Modal </button>
-    <Modal v-show="isModalVisible" @close="closeModal">
+    <Modal v-show="isModalVisible" @close="closeModal" :class="{modalIsHidden: !isModalVisible}">
       <div slot="header" class="modal-header">
         <p>This is the header content for the Home Page</p> 
         <button type="button" class="btn-close" @click="closeModal"> X </button>

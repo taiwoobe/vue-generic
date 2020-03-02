@@ -5,7 +5,7 @@
         <header class="modal-header" id="modalTitle">
           <slot name="header">
             This is the default title!
-            <button type="button" class="btn-close" @click="close" aria-label="Close modal"> x </button>
+            <button type="button" class="btn-close" @click="close" aria-label="Close modal"> X </button>
           </slot>
         </header>
         <section class="modal-body" id="modalDescription">
